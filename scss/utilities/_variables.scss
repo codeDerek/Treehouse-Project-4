@@ -2,6 +2,9 @@
 
 $color-primary: #57e1c0;
 $color-default: #51DDFC;
+$color-text-hover: #FFF;
+
+$color-pic-border: #dfdfdf;
 
 $color-success: #62cc82;
 $color-error: #e4757a;
@@ -18,9 +21,16 @@ $color-col-5: #89d9a0;
 $color-col-7: #ec9fa2;
 $color-col-8: #fd9f84;
 
+$color-grid-text: #757575;
+
 
 //fonts
 
+//Google $font-stack
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Raleway');
+
+$font-stack-normal: 'Raleway', sans-serif;
+$font-stack-blurb: 'Francois One', sans-serif;
 
 
 

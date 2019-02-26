@@ -1,0 +1,34 @@
+
+
+
+.grid__row {
+margin-left: 5%;
+margin-right: 5%;
+}
+
+
+.btn--default {
+  @include button-style($color-default);
+}
+
+.btn--success {
+@include button-style($color-success);
+}
+
+.btn--error {
+  @include button-style($color-error);
+}
+
+.btn--warning {
+  @include button-style($color-warning);
+}
+
+.btn--info {
+  @include button-style($color-info);
+}
+
+//Grid System buttons
+
+.grid__col--12.theme__colors {
+  @include grid-button-style($color-col-12);
+}

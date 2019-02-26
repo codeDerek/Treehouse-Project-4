@@ -1,3 +1,22 @@
+
+
+@mixin button-style($background-color) {
+  @extend %button;
+  text-transform: uppercase;
+  background-color: $background-color;
+  color: $color-text-hover;
+  margin-bottom: 20px;
+}
+
+
+@mixin grid-button-style($background-color) {
+  @extend %button;
+  background-color: $background-color;
+  color: $color-grid-text;
+  padding-right: 10px;
+}
+
+
 //flexbox settings
 
 

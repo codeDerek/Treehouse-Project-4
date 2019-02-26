@@ -1,1 +1,13 @@
 
+.grid__col--3,
+.grid__col--6,
+.grid__row {
+@extend %center;
+}
+
+.img--frame {
+  padding: 10px;
+  border-width: thin;
+  border-style: inset;
+  border-color: rgb1($color-pic-border, .6);
+}

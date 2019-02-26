@@ -1,0 +1,31 @@
+//Navigation button layouts.
+
+.nav {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+@extend %button;
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav__item:hover {
+  background-color: $color-primary;
+  a {
+    color: $color-text-hover;
+  }
+}
+
+.headline--secondary {
+  @extend %site-width;
+  font-family: $font-stack-normal;
+margin: auto;
+}

@@ -9,6 +9,10 @@
 
 //Images
 
+%center {
+    display: flex;
+    justify-content: center;
+  }
 
 
 
@@ -16,8 +20,8 @@
 
 //Nav items
 
-.nav--items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+
+%site-width {
+    width: 90%;
 }
