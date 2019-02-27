@@ -4,6 +4,9 @@
   text-align: center;
   list-style-type: none;
   padding-left: 0;
+  @media (min-width: $break-l) {
+    padding-left: 20%;
+  }
 }
 
 li {
@@ -15,6 +18,15 @@ li {
 a {
   color: black;
   text-decoration: none;
+}
+
+.nav__item {
+  @media (min-width: $break-l) {
+    display: inline;
+margin-left: 25px;
+
+
+  }
 }
 
 .nav__item:hover {
@@ -33,4 +45,21 @@ margin: auto;
 p a {
   color: $color-default;
   font-weight: bold;
+}
+
+.card {
+  @media (min-width: $break-l) {
+    display: inline-block;
+width: 90%;
+margin-right: 0;
+  }
+}
+
+.grid__col--8 {
+  @media (min-width: $break-l) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  flex-grow: 0
+  }
 }

@@ -4,6 +4,12 @@ padding-top: 15px;
   padding-bottom: 15px;
   margin: auto;
   border-radius: 5px;
+  @media (min-width: 1400px) {
+    width: 20;
+  padding: 10px;
+
+
+  }
 }
 
 %blockquote {

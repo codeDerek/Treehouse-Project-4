@@ -3,6 +3,15 @@
 .grid__col--6,
 .grid__row {
 @extend %center;
+@media (min-width: 1400px) {
+  flex-basis: auto;
+}
+}
+
+.img--logo {
+  @media (min-width: $break-l) {
+  margin-left: 70%;
+  }
 }
 
 .img--frame {
@@ -19,4 +28,7 @@
   margin: auto;
   padding-top: 20px;
   justify-content: center;
+  @media (min-width: $break-l) {
+
+  }
 }
