@@ -8,4 +8,11 @@
   color: $color-primary;
   width: 75%;
   padding-left: 10%;
+  padding-bottom: 15px;
+}
+
+.headline--secondary {
+  font-family: $font-stack-normal;
+  color: rgba($color-grid-text, .5);
+  padding-top: 35px;
 }

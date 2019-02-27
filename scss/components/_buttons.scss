@@ -1,9 +1,13 @@
 
 
+.grid__col--12 {
+@extend %button-layout;
+width: 100%;
+}
+
 
 .grid__row {
-margin-left: 5%;
-margin-right: 5%;
+@extend %button-layout;
 }
 
 
@@ -58,6 +62,7 @@ margin-right: 5%;
 }
 
 .grid__col--3.theme__colors,
-.grid__col--6.theme__colors, {
+.grid__col--6.theme__colors,
+.grid__col--12.theme__colors {
   justify-content: flex-start;
 }

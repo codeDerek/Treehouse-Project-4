@@ -29,3 +29,8 @@ a {
   font-family: $font-stack-normal;
 margin: auto;
 }
+
+p a {
+  color: $color-default;
+  font-weight: bold;
+}

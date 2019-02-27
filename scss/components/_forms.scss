@@ -1,5 +1,32 @@
 .form {
+@extend %center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;;
+  justify-content: space-between;
+
+}
+
+.form__label--hidden, {
+  display: none;
+}
+
+.form__input {
+  width: 90%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: thick;
+  border-color: $color-primary;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+:active {
+  border-left: display;
+  border-right: display;
+  border-top: display;
+}
 }

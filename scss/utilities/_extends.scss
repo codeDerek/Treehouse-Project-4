@@ -1,5 +1,5 @@
 %button {
-  width: 100%;
+  width: 95%;
 padding-top: 15px;
   padding-bottom: 15px;
   margin: auto;
@@ -8,12 +8,22 @@ padding-top: 15px;
 
 %blockquote {
   font-family: $font-stack-blurb;
+  font-style: italic;
   font-size: 1.5em;
   border-color: $color-primary;
+  border-radius: 5px;
   padding-left: 20px;
 border-style:solid;
 border-left-width: 10px;
 border-top: none;
 border-right: none;
 border-bottom: none;
+}
+
+%button-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

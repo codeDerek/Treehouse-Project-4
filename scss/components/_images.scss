@@ -6,8 +6,17 @@
 }
 
 .img--frame {
+  width: 100%;
   padding: 10px;
+  width: 80%;
+  height: 80%;
   border-width: thin;
   border-style: inset;
   border-color: rgb1($color-pic-border, .6);
+}
+
+.img--avatar {
+  margin: auto;
+  padding-top: 20px;
+  justify-content: center;
 }
