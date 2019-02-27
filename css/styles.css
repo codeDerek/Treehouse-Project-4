@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Francois+One|Raleway");
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--12.theme__colors, li {
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--12.theme__colors, .grid__col--6.theme__colors, .grid__col--4.theme__colors, .grid__col--3.theme__colors, .grid__col--5.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, li {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: auto;
   border-radius: 5px; }
+
+.blockquote {
+  font-family: "Francois One", sans-serif;
+  font-size: 1.5em;
+  border-color: #57e1c0;
+  padding-left: 20px;
+  border-style: solid;
+  border-left-width: 10px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none; }
 
 .grid__col--3,
 .grid__col--6,
@@ -459,7 +470,62 @@ template {
 .grid__col--12.theme__colors {
   background-color: #80e8d1;
   color: #757575;
-  padding-right: 10px; }
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--6.theme__colors {
+  background-color: #3fabca;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--4.theme__colors {
+  background-color: #7ee6fd;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--3.theme__colors {
+  background-color: #deb2ee;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--5.theme__colors {
+  background-color: #89d9a0;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--7.theme__colors {
+  background-color: #ec9fa2;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--8.theme__colors {
+  background-color: #fd9f84;
+  color: #757575;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px; }
+
+.grid__col--3.theme__colors,
+.grid__col--6.theme__colors {
+  justify-content: flex-start; }
 
 .form {
   display: flex;
@@ -493,5 +559,11 @@ a {
 .headline--secondary {
   font-family: "Raleway", sans-serif;
   margin: auto; }
+
+.headline--primary {
+  font-family: "Francois One", sans-serif;
+  color: #57e1c0;
+  width: 75%;
+  padding-left: 10%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,3 +5,15 @@ padding-top: 15px;
   margin: auto;
   border-radius: 5px;
 }
+
+%blockquote {
+  font-family: $font-stack-blurb;
+  font-size: 1.5em;
+  border-color: $color-primary;
+  padding-left: 20px;
+border-style:solid;
+border-left-width: 10px;
+border-top: none;
+border-right: none;
+border-bottom: none;
+}

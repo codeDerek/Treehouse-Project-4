@@ -32,3 +32,32 @@ margin-right: 5%;
 .grid__col--12.theme__colors {
   @include grid-button-style($color-col-12);
 }
+
+.grid__col--6.theme__colors {
+  @include grid-button-style($color-col-6);
+}
+
+.grid__col--4.theme__colors {
+  @include grid-button-style($color-col-4);
+}
+
+.grid__col--3.theme__colors {
+  @include grid-button-style($color-col-3);
+}
+
+.grid__col--5.theme__colors {
+  @include grid-button-style($color-col-5);
+}
+
+.grid__col--7.theme__colors {
+  @include grid-button-style($color-col-7);
+}
+
+.grid__col--8.theme__colors {
+  @include grid-button-style($color-col-8);
+}
+
+.grid__col--3.theme__colors,
+.grid__col--6.theme__colors, {
+  justify-content: flex-start;
+}

@@ -1,1 +1,11 @@
 
+.blockquote {
+  @extend %blockquote;
+}
+
+.headline--primary {
+  font-family: $font-stack-blurb;
+  color: $color-primary;
+  width: 75%;
+  padding-left: 10%;
+}

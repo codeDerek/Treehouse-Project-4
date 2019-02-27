@@ -13,7 +13,10 @@
   @extend %button;
   background-color: $background-color;
   color: $color-grid-text;
-  padding-right: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: -15px;
+  margin-right: 15px;
 }
 
 
