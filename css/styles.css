@@ -352,7 +352,7 @@ template {
   padding: 1em 10px;
   display: flex;
   flex-direction: column; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__row {
       flex-direction: row; } }
 .grid__col--1 {
@@ -448,8 +448,13 @@ template {
   width: 100%; }
   @media (min-width: 1400px) {
     .grid__col--12 {
-      flex-basis: 90%;
-      padding-top: 30px; } }
+      flex-basis: 100%;
+      padding-top: 30px;
+      justify-content: flex-start; } }
+
+@media (min-width: 1400px) {
+  .grid__row {
+    width: 90%; } }
 
 .btn--default {
   text-transform: uppercase;
@@ -570,6 +575,9 @@ template {
       flex-wrap: wrap;
       flex-grow: 1;
       justify-content: center; } }
+  @media (min-width: 1400px) {
+    .grid__col--8.theme__colors {
+      flex-grow: 2; } }
 
 .grid__col--3.theme__colors,
 .grid__col--6.theme__colors,
@@ -580,6 +588,10 @@ template {
     .grid__col--6.theme__colors,
     .grid__col--12.theme__colors {
       justify-content: center; } }
+
+@media (min-width: 1400px) {
+  .grid__col--7.theme__colors.centered {
+    flex-grow: .3; } }
 
 .form {
   display: flex;
@@ -628,10 +640,6 @@ template {
     justify-content: flex-start; } }
 
 @media (min-width: 1400px) {
-  .grid__row {
-    flex-basis: auto; } }
-
-@media (min-width: 1400px) {
   .img--logo {
     margin-left: 70%; } }
 
@@ -650,11 +658,10 @@ template {
 
 .img--avatar {
   margin: auto;
-  padding-top: 20px;
+  padding-bottom: 30px;
   justify-content: center; }
   @media (min-width: 1400px) {
     .img--avatar {
-      padding-bottom: 10px;
       justify-content: flex-start; } }
 
 .nav {
@@ -714,6 +721,7 @@ p a {
 .headline--secondary {
   font-family: "Raleway", sans-serif;
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 35px; }
+  padding-top: 35px;
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

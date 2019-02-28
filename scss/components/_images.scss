@@ -16,7 +16,7 @@
 .grid__row {
   @extend %center;
   @media (min-width: $break-l) {
-    flex-basis: auto;
+  
   }
 }
 
@@ -43,10 +43,10 @@
 
 .img--avatar {
   margin: auto;
-  padding-top: 20px;
+padding-bottom: 30px;
   justify-content: center;
   @media (min-width: $break-l) {
-    padding-bottom: 10px;
+
     justify-content: flex-start;
   }
 }

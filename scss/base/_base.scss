@@ -1,10 +1,12 @@
 // Only use *, ul tag, and p tags
 
-
 p {
   @extend %site-width;
   font-family: $font-stack-normal;
   margin: auto;
   text-align: left;
   line-height: 23px;
+  @media (min-width: $break-l) {
+  
+  }
 }
