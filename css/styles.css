@@ -7,8 +7,8 @@
   border-radius: 5px; }
   @media (min-width: 1400px) {
     .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--12.theme__colors, .grid__col--6.theme__colors, .grid__col--4.theme__colors, .grid__col--3.theme__colors, .grid__col--5.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, li {
-      width: 20;
-      padding: 10px; } }
+      display: flex;
+      flex-basis: 15%; } }
 
 .blockquote {
   font-family: "Francois One", sans-serif;
@@ -30,9 +30,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.form, .grid__col--3,
-.grid__col--6,
-.grid__row {
+.form, .grid__col--3, .grid__col--6, .grid__row {
   display: flex;
   justify-content: center; }
 
@@ -448,6 +446,10 @@ template {
 
 .grid__col--12 {
   width: 100%; }
+  @media (min-width: 1400px) {
+    .grid__col--12 {
+      flex-basis: 90%;
+      padding-top: 30px; } }
 
 .btn--default {
   text-transform: uppercase;
@@ -489,47 +491,95 @@ template {
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--12.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--6.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--4.theme__colors {
   background-color: #7ee6fd;
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--4.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--3.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--5.theme__colors {
   background-color: #89d9a0;
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--5.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--7.theme__colors {
   background-color: #ec9fa2;
   color: #757575;
   margin-bottom: 5px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  flex-basis: 50%; }
+  @media (min-width: 1400px) {
+    .grid__col--7.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--8.theme__colors {
   background-color: #fd9f84;
   color: #757575;
   margin-bottom: 5px;
   padding-left: 10px; }
+  @media (min-width: 1400px) {
+    .grid__col--8.theme__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: center; } }
 
 .grid__col--3.theme__colors,
 .grid__col--6.theme__colors,
 .grid__col--12.theme__colors {
   justify-content: flex-start; }
+  @media (min-width: 1400px) {
+    .grid__col--3.theme__colors,
+    .grid__col--6.theme__colors,
+    .grid__col--12.theme__colors {
+      justify-content: center; } }
 
 .form {
   display: flex;
@@ -569,8 +619,15 @@ template {
     justify-content: center; } }
 
 @media (min-width: 1400px) {
-  .grid__col--3,
-  .grid__col--6,
+  .grid__col--3 {
+    flex-basis: auto; } }
+
+@media (min-width: 1400px) {
+  .grid__col--6 {
+    flex-basis: 40%;
+    justify-content: flex-start; } }
+
+@media (min-width: 1400px) {
   .grid__row {
     flex-basis: auto; } }
 
@@ -586,11 +643,19 @@ template {
   border-width: thin;
   border-style: inset;
   border-color: rgb1(#dfdfdf, 0.6); }
+  @media (min-width: 1400px) {
+    .img--frame {
+      width: 80%;
+      height: 80%; } }
 
 .img--avatar {
   margin: auto;
   padding-top: 20px;
   justify-content: center; }
+  @media (min-width: 1400px) {
+    .img--avatar {
+      padding-bottom: 10px;
+      justify-content: flex-start; } }
 
 .nav {
   text-align: center;

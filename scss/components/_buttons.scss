@@ -3,11 +3,16 @@
 .grid__col--12 {
 @extend %button-layout;
 width: 100%;
+@media (min-width: $break-l) {
+  flex-basis: 90%;
+  padding-top: 30px;
+}
 }
 
 
 .grid__row {
 @extend %button-layout;
+
 }
 
 
@@ -55,6 +60,7 @@ width: 100%;
 
 .grid__col--7.theme__colors {
   @include grid-button-style($color-col-7);
+  flex-basis: 50%;
 }
 
 .grid__col--8.theme__colors {
@@ -65,4 +71,7 @@ width: 100%;
 .grid__col--6.theme__colors,
 .grid__col--12.theme__colors {
   justify-content: flex-start;
+  @media (min-width: $break-l) {
+    justify-content: center;
+  }
 }

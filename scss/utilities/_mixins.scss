@@ -16,8 +16,13 @@
   color: $color-grid-text;
   margin-bottom: 5px;
   padding-left: 10px;
-  // margin-left: -15px;
-  // margin-right: 15px;
+  @media (min-width: $break-l) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
 }
 
 
