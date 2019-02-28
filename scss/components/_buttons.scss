@@ -3,17 +3,17 @@
 .grid__col--12 {
 @extend %button-layout;
 width: 100%;
-@media (min-width: $break-l) {
-  flex-basis: 100%;
+@include desktop {
+  @include flex-basis-justify(100%, flex-start);
   padding-top: 30px;
-  justify-content: flex-start;
+
 }
 }
 
 
 .grid__row {
 @extend %button-layout;
-@media (min-width: $break-l) {
+@include desktop {
   width:90%;
 }
 }
@@ -68,7 +68,7 @@ width: 100%;
 
 .grid__col--8.theme__colors {
   @include grid-button-style($color-col-8);
-  @media (min-width: $break-l) {
+  @include desktop {
 flex-grow: 2;
   }
 }
@@ -77,13 +77,13 @@ flex-grow: 2;
 .grid__col--6.theme__colors,
 .grid__col--12.theme__colors {
   justify-content: flex-start;
-  @media (min-width: $break-l) {
+  @include desktop {
     justify-content: center;
   }
 }
 
 .grid__col--7.theme__colors.centered {
-  @media (min-width: $break-l) {
+  @include desktop {
     flex-grow: .3;
   }
 }

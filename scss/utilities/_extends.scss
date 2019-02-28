@@ -2,9 +2,11 @@
   width: 95%;
 padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   border-radius: 5px;
-  @media (min-width: $break-l) {
+  @include desktop {
 display: flex;
 flex-basis: 15%;
   }

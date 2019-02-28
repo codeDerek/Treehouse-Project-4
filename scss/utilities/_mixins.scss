@@ -16,7 +16,7 @@
   color: $color-grid-text;
   margin-bottom: 5px;
   padding-left: 10px;
-  @media (min-width: $break-l) {
+  @include desktop {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -32,8 +32,16 @@
 
 
 
+@mixin flex-basis-justify($flex-basis, $justify-content) {
+flex-basis: $flex-basis;
+justify-content: $justify-content;
+}
 
 
 
 
 //media queries
+
+@mixin desktop {
+  @media (min-width: $break-l){@content};
+}

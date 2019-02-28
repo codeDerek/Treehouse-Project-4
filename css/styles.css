@@ -3,6 +3,8 @@
   width: 95%;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   border-radius: 5px; }
   @media (min-width: 1400px) {
@@ -358,89 +360,89 @@ template {
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--1 {
       margin-top: 0;
       flex-basis: 8.3333333333%; } }
 .grid__col--2 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--2 {
       margin-top: 0;
       flex-basis: 16.6666666667%; } }
 .grid__col--3 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--3 {
       margin-top: 0;
       flex-basis: 25%; } }
 .grid__col--4 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--4 {
       margin-top: 0;
       flex-basis: 33.3333333333%; } }
 .grid__col--5 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--5 {
       margin-top: 0;
       flex-basis: 41.6666666667%; } }
 .grid__col--6 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--6 {
       margin-top: 0;
       flex-basis: 50%; } }
 .grid__col--7 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--7 {
       margin-top: 0;
       flex-basis: 58.3333333333%; } }
 .grid__col--8 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--8 {
       margin-top: 0;
       flex-basis: 66.6666666667%; } }
 .grid__col--9 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--9 {
       margin-top: 0;
       flex-basis: 75%; } }
 .grid__col--10 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--10 {
       margin-top: 0;
       flex-basis: 83.3333333333%; } }
 .grid__col--11 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--11 {
       margin-top: 0;
       flex-basis: 91.6666666667%; } }
 .grid__col--12 {
   margin-top: 10px;
   flex-basis: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1400px) {
     .grid__col--12 {
       margin-top: 0;
       flex-basis: 100%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
 
@@ -449,8 +451,8 @@ template {
   @media (min-width: 1400px) {
     .grid__col--12 {
       flex-basis: 100%;
-      padding-top: 30px;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      padding-top: 30px; } }
 
 @media (min-width: 1400px) {
   .grid__row {
@@ -594,12 +596,11 @@ template {
     flex-grow: .3; } }
 
 .form {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
   @media (min-width: 1400px) {
     .form {
-      width: 50%;
+      width: 100%;
       display: inline-block; } }
 
 .form__label--hidden {
@@ -619,6 +620,9 @@ template {
   border-left: none;
   border-right: none;
   border-top: none; }
+  @media (min-width: 1400px) {
+    .form__input {
+      margin-left: 20px; } }
   .form__input :active {
     border-left: display;
     border-right: display;
@@ -641,7 +645,7 @@ template {
 
 @media (min-width: 1400px) {
   .img--logo {
-    margin-left: 70%; } }
+    padding-top: 30px; } }
 
 .img--frame {
   width: 100%;
@@ -649,8 +653,8 @@ template {
   width: 80%;
   height: 80%;
   border-width: thin;
-  border-style: inset;
-  border-color: rgb1(#dfdfdf, 0.6); }
+  border-style: solid;
+  border-color: rgba(223, 223, 223, 0.8); }
   @media (min-width: 1400px) {
     .img--frame {
       width: 80%;
@@ -662,7 +666,8 @@ template {
   justify-content: center; }
   @media (min-width: 1400px) {
     .img--avatar {
-      justify-content: flex-start; } }
+      padding-left: 25%;
+      padding-bottom: 0; } }
 
 .nav {
   text-align: center;
@@ -670,7 +675,9 @@ template {
   padding-left: 0; }
   @media (min-width: 1400px) {
     .nav {
-      padding-left: 20%; } }
+      padding-left: 20%;
+      padding-top: 40px;
+      font-size: 1.2em; } }
 
 li {
   background-color: white;
