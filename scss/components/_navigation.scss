@@ -45,8 +45,7 @@ margin: auto;
 }
 
 p a {
-  color: $color-default;
-  font-weight: bold;
+@extend %hover-color;
 }
 
 .card {

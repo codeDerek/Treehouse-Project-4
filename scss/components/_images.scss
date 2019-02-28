@@ -27,17 +27,7 @@
 }
 
 .img--frame {
-  width: 100%;
-  padding: 10px;
-  width: 80%;
-  height: 80%;
-  border-width: thin;
-  border-style: solid;
-  border-color: rgba($color-pic-border, .8);
-  @include desktop {
-    width: 80%;
-    height: 80%;
-  }
+@extend %framed-images;
 
 }
 

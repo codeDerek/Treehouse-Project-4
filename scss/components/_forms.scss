@@ -30,9 +30,9 @@
     margin-left: 20px;
   }
 :active {
-  border-left: display;
-  border-right: display;
-  border-top: display;
+  border-left: solid;
+  border-right: solid;
+  border-top: solid;
 
 }
 }
@@ -40,6 +40,6 @@
 .color-col-4 {
   @include desktop {
     width: 100%;
-    @include flex-basis-justify(30, center);
+    @include flex-basis-justify(0, center);
   }
 }
